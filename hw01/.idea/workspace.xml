@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c656a047-f9b8-4fbd-a0f1-bb160526a4bf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aRFIu8LuZRDZktKZWdYLeJsylm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Open3D_Example" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.voxel_filter">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="hw01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/PointCloud/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pca_normal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/PointCloud/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pca_normal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rgbd_odometry" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/PointCloud/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Open3D_Example-306173c68cec9414e5cbf0c8db1c8db149457852/examples/Python/Basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Open3D_Example-306173c68cec9414e5cbf0c8db1c8db149457852/examples/Python/Basic/rgbd_odometry.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/PointCloud/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="voxel_carving" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/PointCloud/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Open3D_Example-306173c68cec9414e5cbf0c8db1c8db149457852/examples/Python/Advanced" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Open3D_Example-306173c68cec9414e5cbf0c8db1c8db149457852/examples/Python/Advanced/voxel_carving.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="voxel_filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/PointCloud/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voxel_filter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.voxel_filter" />
+        <item itemvalue="Python.pca_normal" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.rgbd_odometry" />
+        <item itemvalue="Python.voxel_carving" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c656a047-f9b8-4fbd-a0f1-bb160526a4bf" name="Default Changelist" comment="" />
+      <created>1586690422768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586690422768</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="301" y="206" width="1251" height="852" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586690456915">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="301" y="206" width="1251" height="852" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586690456915" />
+    <state x="197" y="256" key="FileChooserDialogImpl" timestamp="1586771182115">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="197" y="256" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1586771182115" />
+    <state width="1893" height="366" key="GridCell.Tab.0.bottom" timestamp="1587278698354">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="366" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1587278698354" />
+    <state width="1893" height="366" key="GridCell.Tab.0.center" timestamp="1587278698354">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="366" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1587278698354" />
+    <state width="1893" height="366" key="GridCell.Tab.0.left" timestamp="1587278698353">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="366" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1587278698353" />
+    <state width="1893" height="366" key="GridCell.Tab.0.right" timestamp="1587278698354">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="366" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1587278698354" />
+    <state width="1893" height="327" key="GridCell.Tab.1.bottom" timestamp="1586930385568">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="327" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586930385568" />
+    <state width="1893" height="327" key="GridCell.Tab.1.center" timestamp="1586930385568">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="327" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586930385568" />
+    <state width="1893" height="327" key="GridCell.Tab.1.left" timestamp="1586930385567">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="327" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586930385567" />
+    <state width="1893" height="327" key="GridCell.Tab.1.right" timestamp="1586930385568">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="327" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586930385568" />
+    <state x="588" y="44" key="SettingsEditor" timestamp="1586702892795">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="588" y="44" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1586702892795" />
+    <state x="187" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1587278315334">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="187" y="342" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1587278315334" />
+    <state x="52" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1586782973677">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="52" y="45" width="840" height="1034" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1586782973677" />
+  </component>
+</project>

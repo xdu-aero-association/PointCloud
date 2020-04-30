@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lesson2code/lesson2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NN-Trees-master" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7 (PointCloud)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

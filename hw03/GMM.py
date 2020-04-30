@@ -25,19 +25,19 @@ class GMM(object):
         self.W = None
         self.data = None
         self.n_points = None
+        self.loglh = None
 
     def initialize(self, data):
         self.n_points = data.shape[0]
         self.data = data
-        # self.Mu = [[-7, 0], [6, -6], [0, 7]]
-        np.random.seed(3)
+        np.random.seed(0)
         a = np.random.randint(0, self.n_points, self.n_clusters)
         if self.n_clusters == 2:
             self.Mu = np.array([data[a[0], :], data[a[1], :]])
-            self.Var = [[20, 20], [20, 20]]
+            self.Var = [[10, 10], [10, 10]]
         if self.n_clusters == 3:
             self.Mu = np.array([data[a[0], :], data[a[1], :], data[a[2], :]])
-            self.Var = [[20, 20], [20, 20], [20, 20]]
+            self.Var = [[10, 10], [10, 10], [10, 10]]
         self.Pi = [1 / self.n_clusters] * self.n_clusters
         self.W = np.ones((self.n_points, self.n_clusters)) / self.n_clusters
 

@@ -13,14 +13,8 @@ class K_Means(object):
         self.centers = None
 
     def distance_sqrt(self, a, b):
-        """
-        """
-        dimensions = len(a)
-
-        _sum = 0
-        for dimension in range(dimensions):
-            difference_sq = (a[dimension] - b[dimension]) ** 2
-            _sum += difference_sq
+        difference = (a - b) ** 2
+        _sum = np.sum(difference, axis=0)
         return sqrt(_sum)
 
     def fit(self, data):
@@ -39,21 +33,20 @@ class K_Means(object):
 
         while num_loop < self.max_iter_ and cluster_change:
             cluster_change = False
-            for point_index in range(num_points):
-                min_dist = 9999999999
-                min_index = 0
-                # print(point)
-                # step2: 计算点到中心的距离，归类到距离最小的一组
-                for center_index in range(self.k_):
-                    dis_sqrt = self.distance_sqrt(self.centers[center_index, :], data[point_index, :])
-                    if dis_sqrt < min_dist:
-                        min_dist = dis_sqrt
-                        min_index = center_index
 
-                # step3: 将距离和索引保存，若所有样本没变化就退出循环
-                if abs(cluster_assment[point_index, 0] - min_dist) > self.tolerance_:
+            center_difference = np.zeros((num_points, self.k_))
+            for center_index in range(self.k_):
+                difference = data - self.centers[center_index, :]
+                difference = np.sqrt(np.sum(np.square(difference), axis=1))
+                center_difference[:, center_index] += difference.reshape(num_points)
+
+            min_index = np.argmin(center_difference, axis=1)
+            dist = np.min(center_difference, axis=1)
+
+            for point_index in range(num_points):
+                if abs(cluster_assment[point_index, 0] - dist[point_index]) > self.tolerance_:
                     cluster_change = True
-                    cluster_assment[point_index, :] = min_index, min_dist
+                    cluster_assment[point_index, :] = min_index[point_index], dist[point_index]
 
             # step4: 更新中心
             for center_index in range(self.k_):
@@ -61,26 +54,21 @@ class K_Means(object):
                 self.centers[center_index, :] = np.mean(points_incluster, axis=0)
             num_loop += 1
 
-
-
         # 屏蔽结束
 
     def predict(self, p_datas):
         result = []
         # 作业2
         # 屏蔽开始
-        num_p_data = p_datas.shape[0]
-        for p_index in range(num_p_data):
-            p_min_dis = 9999999999
-            p_min_index = 0
-            for c_index in range(self.centers.shape[0]):
-                d_sqrt = self.distance_sqrt(p_datas[p_index, :], self.centers[c_index, :])
-                # print(dis_sqrt)
-                if p_min_dis > d_sqrt:
-                    p_min_dis = d_sqrt
-                    p_min_index = c_index
-            result.append(p_min_index)
 
+        num_points = p_datas.shape[0]
+        center_difference = np.zeros((num_points, self.k_))
+        for center_index in range(self.k_):
+            difference = p_datas - self.centers[center_index, :]
+            difference = np.sqrt(np.sum(np.square(difference), axis=1))
+            center_difference[:, center_index] += difference.reshape(num_points)
+
+        result = np.argmin(center_difference, axis=1)
 
         # 屏蔽结束
         return result

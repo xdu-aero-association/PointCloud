@@ -151,7 +151,7 @@ if __name__ == '__main__':
     gmm = GMM(n_clusters=3)
     gmm.fit(X)
     cat = gmm.predict(X)
-    # print(cat)
+    print(cat)
     plt.figure(figsize=(10, 8))
     plt.axis([-10, 15, -5, 15])
     plt.scatter(X[:, 0], X[:, 1], s=5, c=cat)

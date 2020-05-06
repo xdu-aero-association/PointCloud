@@ -23,6 +23,7 @@ class K_Means(object):
         # step1: 随机选择ｋ个点作为中心点
         num_points = data.shape[0]
         cluster_assment = np.mat(np.zeros((num_points, 2)))
+        # print(cluster_assment)
         cluster_change = True
         self.centers = np.empty(shape=[0, data.shape[1]])
         for i in np.random.choice(data.shape[0], self.k_):
@@ -38,7 +39,7 @@ class K_Means(object):
             for center_index in range(self.k_):
                 difference = data - self.centers[center_index, :]
                 difference = np.sqrt(np.sum(np.square(difference), axis=1))
-                center_difference[:, center_index] += difference.reshape(num_points)
+                center_difference[:, center_index] = difference.reshape(num_points)
 
             min_index = np.argmin(center_difference, axis=1)
             dist = np.min(center_difference, axis=1)
@@ -51,7 +52,8 @@ class K_Means(object):
             # step4: 更新中心
             for center_index in range(self.k_):
                 points_incluster = data[np.nonzero(cluster_assment[:, 0].A == center_index)[0]]
-                self.centers[center_index, :] = np.mean(points_incluster, axis=0)
+                if len(points_incluster) != 0:
+                    self.centers[center_index, :] = np.mean(points_incluster, axis=0)
             num_loop += 1
 
         # 屏蔽结束
@@ -77,7 +79,7 @@ if __name__ == '__main__':
     x = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11]])
     k_means = K_Means(n_clusters=2)
     k_means.fit(x)
-    # print(k_means.centers)
+    print(k_means.centers)
 
     cat = k_means.predict(x)
     print(cat)

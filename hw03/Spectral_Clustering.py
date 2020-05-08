@@ -6,6 +6,8 @@ import pylab
 import random, math
 
 import matplotlib.pyplot as plt
+
+from sklearn import cluster, datasets, mixture
 from matplotlib.patches import Ellipse
 from scipy.stats import multivariate_normal
 import KMeans
@@ -15,7 +17,7 @@ plt.style.use('seaborn')
 
 
 class spectral_clustering(object):
-    def __init__(self, n_clusters, epsilon=1e-4, max_iter=600):
+    def __init__(self, n_clusters, epsilon=1e-4, max_iter=50):
         self.n_clusters = n_clusters
         self.max_iter = max_iter
 
@@ -27,9 +29,9 @@ class spectral_clustering(object):
         self.L = None  # 图的拉普拉斯矩阵
         self.L_norm = None  # 规范化后的拉普拉斯矩阵
         self.D = None  # 图的度矩阵
-        self.cluster = None
 
         self.N = None
+        self.vector = None
         # 屏蔽结束
 
     def init_param(self, data):
@@ -38,15 +40,18 @@ class spectral_clustering(object):
         self.cal_weight_mat(data)
         self.D = np.diag(self.W.sum(axis=1))
         self.L = self.D - self.W
-        print(self.W)
+        # print(self.W)
         return
 
 
 
     def cal_weight_mat(self, data, n_neighbors=5):
         self.W = neighbors.kneighbors_graph(data, n_neighbors, mode='connectivity', include_self=False)
+        # print(self.W)
         self.W = np.array(self.W.A)
+        # print(self.W.shape)
         self.W = 0.5 * (self.W + self.W.T)
+        # print(self.W.shape)
 
     def fit(self, data):
         # 作业3
@@ -56,18 +61,19 @@ class spectral_clustering(object):
 
         w, v = np.linalg.eig(self.L)
         inds = np.argsort(w)[:self.n_clusters]
-        Vectors = v[:, inds]
+        self.vector = v[:, inds]
 
-        km = KMeans.K_Means(n_clusters=self.n_clusters, tolerance=self.epsilon, max_iter=self.max_iter)
-        km.fit(Vectors)
-        print(km.centers)
-        self.cluster = km.predict(Vectors)
+
         # 屏蔽结束
 
     def predict(self, data):
         # 屏蔽开始
-        result = []
-        result = self.cluster
+        km = cluster.MiniBatchKMeans(n_clusters=self.n_clusters, max_iter=self.max_iter)
+
+        # km = KMeans.K_Means(n_clusters=self.n_clusters, tolerance=self.epsilon, max_iter=self.max_iter)
+        km.fit(self.vector)
+        # print(km.centers)
+        result = km.predict(self.vector)
 
         return result
         # 屏蔽结束

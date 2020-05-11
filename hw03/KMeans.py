@@ -49,6 +49,8 @@ class K_Means(object):
                     cluster_change = True
                     cluster_assment[point_index, :] = min_index[point_index], dist[point_index]
 
+
+
             # step4: 更新中心
             for center_index in range(self.k_):
                 points_incluster = data[np.nonzero(cluster_assment[:, 0].A == center_index)[0]]
